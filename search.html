@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    body {
+        background: black
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Modal Example</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+        <div>
+            <h2>Basic List Group</h2>
+            <ul class="list-group">
+                <li class="list-group-item col-lg-6" style="background-color: #1a1a1a; border: 0;" >
+                	<div class="row" style="background-color: #1a1a1a">
+                		<div class="col-lg-2">
+                    <img style="border-radius: 10px;" src="img/flash.jpg" alt="filename_image" width="100px">
+                    </div>
+                    <div class="col-lg-10" style="padding-left: 10%;">
+                    <h3 style="color: #a0a0a0; ">The Flash (2014)</h3>
+                    <p style="font-size: 15px; color: #a0a0a0">Rating: 7.8  <i class="fa fa-star"></i></p>
+                    <p style="font-size: 15px; color: #a0a0a0"><i class="fa fa-download"></i> 15463</p>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content" style=" border-radius: 40px">
+
+                    <div class="modal-body" style="border: 0; background-color: #1a1a1a; border-top-right-radius: 10px; border-top-left-radius: 10px">
+                    	<button type="button" style="color: white;" class="close" data-dismiss="modal">&times;</button>
+                        <form style="padding-left: 20%;">
+                        	<h1 style="color: #a0a0a0; margin-bottom: 20px"> <i class="fa fa-search"></i> Search</h1>
+                        	<div class="input-group" ">
+                                <label style="color: #a0a0a0">File Type</label>
+                                <br>
+                                <select style="border-radius: 5px; height: 40px; width: 300px;" class="form-control" id="option">
+                                    <option> Movies</option>
+                                    <option>Games</option>
+                                    <option>Tv Series</option>
+                                    <option>Softwares</option>
+                                </select>
+                            </div>
+                            <div class="input-group" style="padding-top: 20px">
+                            	
+                                <label style="color: #a0a0a0">Enter File Name</label>
+                                <input type="text" style="border-radius: 5px; height: 40px; " class="form-control" name="file" placeholder="File Name">
+                            </div>
+                            
+                            <br>
+                        </form>
+                    </div>
+                    <div class="modal-footer" style="border: 0; background-color: #1a1a1a; padding-bottom: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
